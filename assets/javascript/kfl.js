@@ -343,7 +343,210 @@ let quarterbacks = [
 let runningBacks = [];
 
 //array of tight ends
-let tightEnds = [];
+let tightEnds = [
+
+	{
+		name:"Mark Andrews",
+		jersey:"89",
+		team:"BAL",
+		position:"TE",
+		height:"6-4",
+		weight:"256",
+		dob:"1995-09-06",
+		college:"Oklahoma"
+	},
+	{
+		name:"Trey Burton",
+		jersey:"80",
+		team:"CHI",
+		position:"TE",
+		height:"6-3",
+		weight:"235",
+		dob:"1991-10-29",
+		college:"Florida"
+	},
+	{
+		name:"Jared Cook",
+		jersey:"87",
+		team:"NO",
+		position:"TE",
+		height:"6-5",
+		weight:"254",
+		dob:"1987-04-07",
+		college:"South Carolina"
+	},
+	{
+		name:"Jack Doyle",
+		jersey:"84",
+		team:"IND",
+		position:"TE",
+		height:"6-6",
+		weight:"262",
+		dob:"1990-05-05",
+		college:"Western Kentucky"
+	},
+	{
+		name:"Eric Ebron",
+		jersey:"85",
+		team:"IND",
+		position:"TE",
+		height:"6-4",
+		weight:"253",
+		dob:"1993-04-10",
+		college:"North Carolina"
+	},
+	{
+		name:"Evan Engram",
+		jersey:"88",
+		team:"NYG",
+		position:"TE",
+		height:"6-3",
+		weight:"240",
+		dob:"1994-09-02",
+		college:"Ole Miss"
+	},
+	{
+		name: "Zach Ertz",
+		jersey:"86",
+		eam:"PHI",
+		position:"TE",
+		height:"6-5",
+		weight:"250",
+		dob:"1990-11-10",
+		college:"Stanford"
+	},
+	{
+		name:"Jimmy Graham",
+		jersey:"80",
+		team:"GB",
+		position:"TE",
+		height:"6-7",
+		weight:"265",
+		dob:"1986-11-24",
+		college:"Miami (FL)"
+	},
+	{
+		name:"Hunter Henry",
+		jersey:"86",
+		team:"LAC",
+		position:"TE",
+		height:"6-5",
+		weight:"250",
+		dob:"1994-12-07",
+		college:"Arkansas"
+	},
+	{
+		name:"TJ Hockenson",
+		jersey:"88",
+		team:"DET",
+		position:"TE",
+		height:"6-5",
+		weight:"251",
+		dob:"1997-07-03",
+		college:"Iowa"
+	},
+	{
+		name:"Austin Hooper",
+		jersey:"81",
+		team:"ATL",
+		position:"TE",
+		height:"6-3",
+		weight:"254",
+		dob:"1994-10-29",
+		college:"Stanford"
+	},
+	{
+		name:"O.J. Howard",
+		jersey:"80",
+		team:"TB",
+		position:"TE",
+		height:"6-6",
+		weight:"251",
+		dob:"1994-11-19",
+		college:"Alabama"
+	},
+	{
+		name:"Travis Kelce",
+		jersey:"87",
+		team:"KC",
+		position:"TE",
+		height:"6-5",
+		weight:"260",
+		dob:"1989-10-05",
+		college:"Cincinnati"
+	},
+	{
+		name:"George Kittle",
+		jersey:"85",
+		team:"SF",
+		position:"TE",
+		height:"6-4",
+		weight:"250",
+		dob:"1993-10-09",
+		college:"Iowa"
+	},
+	{
+		name:"Vance McDonald",
+		jersey:"89",
+		team:"PIT",
+		position:"TE",
+		height:"6-4",
+		weight:"267",
+		dob:"1990-06-13",
+		college:"Rice"
+	},
+	{
+		name:"David Njoku",
+		jersey:"85",
+		team:"CLE",
+		position:"TE",
+		height:"6-4",
+		weight:"246",
+		dob:"1996-07-10",
+		college:"Miami (FL)"
+	},
+	{
+		name:"Greg Olsen",
+		jersey:"88",
+		team:"CAR",
+		position:"TE",
+		height:"6-5",
+		weight:"255",
+		dob:"1985-03-11",
+		college:"Miami (FL)"
+	},
+	{
+		name:"Jordan Reed",
+		jersey:"86",
+		team:"WAS",
+		position:"TE",
+		height:"6-2",
+		weight:"242",
+		dob:"1990-07-03",
+		college:"Florida"
+	},
+	{
+		name:"Kyle Rudolph",
+		jersey:"82",
+		team:"MIN",
+		position:"TE",
+		height:"6-6",
+		weight:"265",
+		dob:"1989-11-09",
+		college:"Notre Dame"
+	},
+	{
+		name:"Delanie Walker",
+		jersey:"82",
+		team:"TEN",
+		position:"TE",
+		height:"6-2",
+		weight:"248",
+		dob:"1984-08-12",
+		college:"Central Missouri State"
+	}
+
+];
 
 //array of kickers
 let kickers = [
