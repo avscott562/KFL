@@ -1,10 +1,10 @@
-let client = new JSO({
-	providerID: "google",
-	client_id: "541950296471.apps.googleusercontent.com",
-	redirect_uri: "http://localhost:8080/", // The URL where you is redirected back, and where you perform run the callback() function. The URI that the user will be redirected back to when completed. This should be the same URL that the page is presented on.
-	authorization: "https://accounts.google.com/o/oauth2/auth",
-	scopes: { request: ["https://www.googleapis.com/auth/userinfo.profile"]}
-})
+// let client = new JSO({
+// 	providerID: "google",
+// 	client_id: "541950296471.apps.googleusercontent.com",
+// 	redirect_uri: "http://localhost:8080/", // The URL where you is redirected back, and where you perform run the callback() function. The URI that the user will be redirected back to when completed. This should be the same URL that the page is presented on.
+// 	authorization: "https://accounts.google.com/o/oauth2/auth",
+// 	scopes: { request: ["https://www.googleapis.com/auth/userinfo.profile"]}
+// })
 
 //5 positions needed - quarterback QB, wide receiver WR, running back RB, kicker K, tight end TE
 
@@ -15,3 +15,23 @@ let client = new JSO({
 // var runningBacks = ["D.J. Foster", "Chase Edmonds", "David Johnson"];
 
 // var kickers = ["Zane Gonzales", ];
+//Declare variables
+let teams = [];
+let quarterbacks = [];
+let runningBacks = [];
+let tightEnds = [];
+let kickers = [];
+
+//variable to hold api query
+let queryURL = "https://www.fantasyfootballnerd.com/service/nfl-teams/json/test";
+//"https://www.fantasyfootballnerd.com/service/" + searchTerm + "/json/test";
+
+//pulling data fron the api
+$.ajax({
+	url: queryURL,
+	method: GET
+})
+  //after we get data from the api
+  .then(function(response) {
+
+  });
