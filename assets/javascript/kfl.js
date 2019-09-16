@@ -13,7 +13,7 @@
 //array of teams
 let teams = ["Arizona Cardinals", "Atlanta Falcons", "Baltimore Ravens", "Buffalo Bills", "Carolina Panthers", "Chicago Bears", "Cincinnati Bengals", "Cleveland Browns", "Dallas Cowboys", "Denver Broncos", "Detroit Lions", "Green Bay Packers", "Houston Texans", "Indianapolis Colts", "Jacksonville Jaguars", "Kansas City Chiefs", "Los Angeles Chargers", "Los Angeles Rams", "Miami Dolphins", "Minnesota Vikings", "New England Patriots", "New Orleans Saints", "New York Gians", "New York Jets", "Oakland Raiders", "Philadelphia Eagles", "Pittsburgh Steelers", "San Franciso 49ers", "Seattle Seahawks", "Tampa Bay Buccaneers", "Tennessee Titans", "Washington Redskins"];
 //5 positions needed - quarterback QB, wide receiver WR, running back RB, kicker K, tight end TE
-//array of top 32 quarterbacks
+//array of top quarterbacks
 let quarterbacks = [
 	
 	{
@@ -339,10 +339,244 @@ let quarterbacks = [
 	
 ];
 
-//array of running backs
-let runningBacks = [];
+//array of top running backs
+let runningBacks = [
 
-//array of tight ends
+	{
+		name:"Saquon Barkley",
+		jersey:"26",
+		team:"NYG",
+		position:"RB",
+		height:"6-0",
+		weight:"233",
+		dob:"1997-02-07",
+		college:"Penn State"
+	},
+	{
+		name:"Le'Veon Bell",
+		jersey:"26",
+		team:"NYJ",
+		position:"RB",
+		height:"6-1",
+		weight:"225",
+		dob:"1992-02-18",
+		college:"Michigan State"
+	},
+	{
+		name:"Chris Carson",
+		team:"SEA",
+		position:"RB",
+		height:"5-11",
+		weight:"222",
+		dob:"1994-09-16",
+		college:"Oklahoma State"
+	},
+	{
+		name:"Nick Chubb",
+		jersey:"24",
+		team:"CLE",
+		position:"RB",
+		height:"5-11",
+		weight:"227",
+		dob:"1995-12-27",
+		college:"Georgia"
+	},
+	{
+		name:"James Conner",
+		jersey:"30",
+		team:"PIT",
+		position:"RB",
+		height:"6-1",
+		weight:"233",
+		dob:"1995-05-05",
+		college:"Pittsburgh"
+	},
+	{
+		name:"Dalvin Cook",
+		jersey:"33",
+		team:"MIN",
+		position:"RB",
+		height:"5-10",
+		weight:"210",
+		dob:"1995-08-10",
+		college:"Florida State"
+	},
+	{
+		name:"Ezekiel Elliott",
+		jersey:"21",
+		team:"DAL",
+		position:"RB",
+		height:"6-0",
+		weight:"228",
+		dob:"1995-07-22",
+		college:"Ohio State"
+	},
+	{
+		name:"Leonard Fournette",
+		jersey:"27",
+		team:"JAC",
+		position:"RB",
+		height:"6-0",
+		weight:"228",
+		dob:"1995-01-18",
+		college:"LSU"
+	},
+	{
+		name:"Devonta Freeman",
+		jersey:"24",
+		team:"ATL",
+		position:"RB",
+		height:"5-8",
+		weight:"206",
+		dob:"1992-03-15",
+		college:"Florida State"
+	},
+	{
+		name:"Melvin Gordon",
+		team:"LAC",
+		position:"RB",
+		height:"6-1",
+		weight:"215",
+		dob:"1993-04-13",
+		college:"Wisconsin"
+	},
+	{
+		name:"Todd Gurley",
+		jersey:"30",
+		team:"LAR",
+		position:"RB",
+		height:"6-1",
+		weight:"224",
+		dob:"1994-08-03",
+		college:"Georgia"
+	},
+	{
+		name:"Derrick Henry",
+		jersey:"22",
+		team:"TEN",
+		position:"RB",
+		height:"6-3",
+		weight:"247",
+		dob:"1994-01-04",
+		college:"Alabama"
+	},
+	{
+		name:"Kareem Hunt",
+		jersey:"27",
+		team:"CLE",
+		position:"RB",
+		height:"5-11",
+		weight:"216",
+		dob:"1995-08-06",
+		college:"Toledo"
+	},
+	{
+		name:"Mark Ingram",
+		jersey:"21",
+		team:"BAL",
+		position:"RB",
+		height:"5-9",
+		weight:"210",
+		dob:"1989-12-21",
+		college:"Alabama"
+	},
+	{
+		name:"Josh Jacobs",
+		jersey:"28",
+		team:"OAK",
+		position:"RB",
+		height:"5-10",
+		weight:"219",
+		dob:"1998-02-11",
+		college:"Alabama"
+	},
+	{
+		name:"David Johnson",
+		jersey:"31",
+		team:"ARI",
+		position:"RB",
+		height:"6-1",
+		weight:"224",
+		dob:"1991-12-16",
+		college:"Northern Iowa"
+	},
+	{
+		name:"Kerryon Johnson",
+		jersey:"33",
+		team:"DET",
+		position:"RB",
+		height:"5-11",
+		weight:"206",
+		dob:"1997-06-30",
+		college:"Auburn"
+	},
+	{
+		name:"Aaron Jones",
+		jersey:"33",
+		team:"GB",
+		position:"RB",
+		height:"5-9",
+		weight:"208",
+		dob:"1994-12-02",
+		college:"UTEP"
+	},
+	{
+		name:"Alvin Kamara",
+		jersey:"41",
+		team:"NO",
+		position:"RB",
+		height:"5-10",
+		weight:"215",
+		dob:"1995-07-25",
+		college:"Tennessee"
+	},
+	{
+		name:"Marlon Mack",
+		jersey:"25",
+		team:"IND",
+		position:"RB",
+		height:"6-0",
+		weight:"210",
+		dob:"1996-03-07",
+		college:"South Florida"
+	},
+	{
+		name:"Christian McCaffrey",
+		jersey:"22",
+		team:"CAR",
+		position:"RB",
+		height:"5-11",
+		weight:"205",
+		dob:"1996-06-07",
+		college:"Stanford"
+	},
+	{
+		name:"Joe Mixon",
+		jersey:"28",
+		team:"CIN",
+		position:"RB",
+		height:"6-1",
+		weight:"220",
+		dob:"1996-07-24",
+		college:"Oklahoma"
+	},
+	{
+		name:"Damien Williams",
+		jersey:"26",
+		team:"KC",
+		position:"RB",
+		height:"5-11",
+		weight:"224",
+		dob:"1992-04-03",
+		college:"Oklahoma"
+	}
+
+];
+
+//array of top running backs
+let wideReceivers = [];
+
+//array of top tight ends
 let tightEnds = [
 
 	{
@@ -416,6 +650,16 @@ let tightEnds = [
 		college:"Stanford"
 	},
 	{
+		name:"Dallas Goedert",
+		jersey:"88",
+		team:"PHI",
+		position:"TE",
+		height:"6-5",
+		weight:"256",
+		dob:"1995-01-03",
+		college:"South Dakota State"
+	},
+	{
 		name:"Jimmy Graham",
 		jersey:"80",
 		team:"GB",
@@ -434,6 +678,16 @@ let tightEnds = [
 		weight:"250",
 		dob:"1994-12-07",
 		college:"Arkansas"
+	},
+	{
+		name:"Chris Herndon",
+		jersey:"89",
+		team:"NYJ",
+		position:"TE",
+		height:"6-4",
+		weight:"253",
+		dob:"1996-02-23",
+		college:"Miami (FL)"
 	},
 	{
 		name:"TJ Hockenson",
