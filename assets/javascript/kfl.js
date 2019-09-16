@@ -574,7 +574,275 @@ let runningBacks = [
 ];
 
 //array of top running backs
-let wideReceivers = [];
+let wideReceivers = [
+
+	{
+		name:"Davante Adams",
+		jersey:"17",
+		team:"GB",
+		position:"WR",
+		height:"6-1",
+		weig:ht:"215",
+		dob:"1992-12-24",
+		college:"Fresno State"
+	},
+	{
+		name:"Keenan Allen",
+		jersey:"13",
+		team:"LAC",
+		position:"WR",
+		height:"6-2",
+		weight:"211",
+		dob:"1992-04-27",
+		college:"California"
+	},
+	{
+		name:"Odell Beckham Jr.",
+		jersey:"13",
+		team:"CLE",
+		position:"WR",
+		height:"5-11",
+		weight:"198",
+		dob:"1992-11-05",
+		college:"LSU"
+	},
+	{
+		name:"Tyler Boyd",
+		team:"CIN",
+		position:"WR",
+		height:"6-2",
+		weight:"203",
+		dob:"1994-11-15",
+		college:"Pittsburgh"
+	},
+	{
+		name:"Antonio Brown",
+		team:"NE",
+		position:"WR",
+		height:"5-10",
+		weight:"185",
+		dob:"1988-07-10",
+		college:"Central Michigan"
+	},
+	{
+		name:"Brandin Cooks",
+		jersey:"12",
+		team:"LAR",
+		position:"WR",
+		height:"5-10",
+		weight:"183",
+		dob:"1993-09-25",
+		college:"Oregon State"
+	},
+	{
+		name:"Amari Cooper",
+		jersey:"19",
+		team:"DAL",
+		position:"WR",
+		height:"6-1",
+		weight:"225",
+		dob:"1994-06-17",
+		college:"Alabama"
+	},
+	{
+		name:"Stefon Diggs",
+		jersey:"14",
+		team:"MIN",
+		position:"WR",
+		height:"6-0",
+		weight:"191",
+		dob:"1993-11-29",
+		college:"Maryland"
+	},
+	{
+		name:"Julian Edelman",
+		jersey:"11",
+		team:"NE",
+		position:"WR",
+		height:"5-10",
+		weight:"198",
+		dob:"1986-05-22",
+		college:"Kent State"
+	},
+	{
+		name:"Mike Evans",
+		jersey:"13",
+		team:"TB",
+		position:"WR",
+		height:"6-5",
+		weight:"231",
+		dob:"1993-08-21",
+		college:"Texas A&amp;M"
+	},
+	{
+		name:"Chris Godwin",
+		team:"TB",
+		position:"WR",
+		height:"6-1",
+		weight:"209",
+		dob:"1996-02-27",
+		college:"Penn State"
+	},
+	{
+		name:"Kenny Golladay",
+		jersey:"19",
+		team:"DET",
+		position:"WR",
+		height:"6-4",
+		weight:"213",
+		dob:"1993-11-03",
+		college:"Northern Illinois"
+	},
+	{
+		name:"A.J. Green",
+		jersey:"18",
+		team:"CIN",
+		position:"WR",
+		height:"6-4",
+		weight:"210",
+		dob:"1988-07-31",
+		college:"Georgia"
+	},
+	{
+		name:"Tyreek Hill",
+		jersey:"10",
+		team:"KC",
+		position:"WR",
+		height:"5-10",
+		weight:"185",
+		dob:"1994-03-01",
+		college:"West Alabama"
+	},
+	{
+		name:"T.Y. Hilton",
+		jersey:"13",
+		team:"IND",
+		position:"WR",
+		height:"5-10",
+		weight:"183",
+		dob:"1989-11-14",
+		college:"Florida International"
+	},
+	{
+		name:"DeAndre Hopkins",
+		jersey:"10",
+		team:"HOU",
+		position:"WR",
+		height:"6-1",
+		weight:"212",
+		dob:"1992-06-06",
+		college:"Clemson"
+	},
+	{
+		name:"Julio Jones",
+		jersey:"11",
+		team:"ATL",
+		position:"WR",
+		height:"6-3",
+		weight:"220",
+		dob:"1989-02-08",
+		college:"Alabama"
+	},
+	{
+		name:"Cooper Kupp",
+		team:"LAR",
+		position:"WR",
+		height:"6-2",
+		weight:"208",
+		dob:"1993-06-15",
+		college:"Eastern Washington"
+	},
+	{
+		name:"Jarvis Landry",
+		jersey:"80",
+		team:"CLE",
+		position:"WR",
+		height:"5-11",
+		weight:"196",
+		dob:"1992-11-28",
+		college:"LSU"
+	},
+	{
+		name:"Tyler Lockett",
+		jersey:"16",
+		team:"SEA",
+		position:"WR",
+		height:"5-10",
+		weight:"182",
+		dob:"1992-09-28",
+		college:"Kansas State"
+	},
+	{
+		name:"D.J. Moore",
+		jersey:"12",
+		team:"CAR",
+		position:"WR",
+		height:"6-0",
+		weight:"210",
+		dob:"1997-04-14",
+		college:"Maryland"
+	},
+	{
+		name:"JuJu Smith-Schuster",
+		team:"PIT",
+		position:"WR",
+		height:"6-1",
+		weight:"215",
+		dob:"1996-11-22",
+		college:"USC"
+	},
+	{
+		name:"Golden Tate",
+		jersey:"15",
+		team:"NYG",
+		position:"WR",
+		height:"5-10",
+		weight:"197",
+		dob:"1988-08-02",
+		college:"Notre Dame"
+	},
+	{
+		name:"Adam Thielen",
+		jersey:"19",
+		team:"MIN",
+		position:"WR",
+		height:"6-2",
+		weight:"200",
+		dob:"1990-08-22",
+		college:"Minnesota State-Mankato"
+	},
+	{
+		name:"Michael Thomas",
+		jersey:"13",
+		team:"NO",
+		position:"WR",
+		height:"6-3",
+		weight:"212",
+		dob:"1993-03-03",
+		college:"Ohio State"
+	},
+	{
+		name:"Mike Williams",
+		jersey:"81",
+		team:"LAC",
+		position:"WR",
+		height:"6-4",
+		weight:"220",
+		dob:"1994-10-04",
+		college:"Clemson"
+	},
+	{
+		name:"Robert Woods",
+		jersey:"17",
+		team:"LAR",
+		position:"WR",
+		height:"6-0",
+		weight:"195",
+		dob:"1992-04-10",
+		college:"USC"
+	}
+
+];
 
 //array of top tight ends
 let tightEnds = [
