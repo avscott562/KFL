@@ -195,7 +195,7 @@ let quarterbacks = [
 		weight:"222",
 		dob:"1993-10-30",
 		college:"Oregon"
-	}
+	},
 	{
 		name: "Baker Mayfield",
 		jersey:"6",
@@ -582,7 +582,7 @@ let wideReceivers = [
 		team:"GB",
 		position:"WR",
 		height:"6-1",
-		weig:ht:"215",
+		weight:"215",
 		dob:"1992-12-24",
 		college:"Fresno State"
 	},
@@ -1242,7 +1242,7 @@ let kickers = [
 		college:"Utah"
 	},
 	{
-		name:"Zane Gonzalez"
+		name:"Zane Gonzalez",
 		jersey:"5",
 		team:"ARI",
 		position:"K",
@@ -1399,7 +1399,7 @@ let kickers = [
 		height:"6-3",
 		weight:"193",
 		dob:"1996-04-01",
-		college:"Syracuse"/>
+		college:"Syracuse"
 	},
 	{
 		name:"Jason Myers",
@@ -1544,7 +1544,7 @@ let kickers = [
 ];
 
 //variable to hold api query
-let queryURL : "https://www.fantasyfootballnerd.com/service/nfl-teams/json/test";
+let queryURL = "https://www.fantasyfootballnerd.com/service/nfl-teams/json/test";
 //"https://www.fantasyfootballnerd.com/service/" + searchTerm + "/json/test";
 
 //pulling data fron the api
