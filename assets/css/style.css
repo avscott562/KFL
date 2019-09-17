@@ -115,6 +115,10 @@ ul {
 
 }
 
+.show {
+   display: block !important;
+}
+
 footer {
 
     text-align: center;
