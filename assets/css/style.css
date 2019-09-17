@@ -1,7 +1,7 @@
 body {
     width: 100%;
     font-family: 'Dosis', sans-serif;
-    background-color: lightgray;
+    background-color:white;
  }
  p {
     font-family: 'Fjalla One', sans-serif;
@@ -18,6 +18,8 @@ body {
  }
  .jumbotron {
     text-align: center;
+    text-align: top;
+    background-color: white;
  }
  .headline {
     width: 70%;
@@ -31,18 +33,17 @@ body {
     height:250px;
     margin: 0 auto;
  }
- .boxleft {
+ .left {
     height: 400px;
-    width: 100px;
-    background-color: darkgray;
+    width: 300px;
+    
     margin-left: 12px;
  }
- .main-text {
-    text-align: center;
-    margin-left: 300px;
- }
+ 
+ 
  footer {
     text-align: center;
+    background-color: green;
  }
  
  body {
@@ -68,10 +69,7 @@ body {
  ul {
     font-size: 14pt;
  }
- .jumbotron {
-    text-align: center;
-    background-color: rgb(126, 153, 240);
- }
+ 
  .headline {
     width: 70%;
     height: 40%;
@@ -84,12 +82,11 @@ body {
     height:250px;
     margin: 0 auto;
  }
- .boxleft {
-    height: 400px;
-    width: 100px;
+ .card {
+    height: 150px;
+    width: 200px;
     background-color: white;
-    border-style: solid;
-    margin-left: 12px;
+    margin-left: 50px;
  }
  .main-text {
     text-align: center;
@@ -98,3 +95,36 @@ body {
  footer {
     text-align: center;
  }
+
+ .jimages {
+    
+     width: 33%;
+     height: 10%;
+ }
+
+
+
+ .logButton {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 2rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 500px;
+    background-color: red;
+    
+}
+
+.story {
+    background-color: white;
+    text-align: center;
+}
+
+.center {
+    margin-left: 10px;
+}
+
+    
+
