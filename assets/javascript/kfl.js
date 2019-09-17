@@ -12,6 +12,7 @@
 //Declare variables
 //array of teams
 let teams = ["Arizona Cardinals", "Atlanta Falcons", "Baltimore Ravens", "Buffalo Bills", "Carolina Panthers", "Chicago Bears", "Cincinnati Bengals", "Cleveland Browns", "Dallas Cowboys", "Denver Broncos", "Detroit Lions", "Green Bay Packers", "Houston Texans", "Indianapolis Colts", "Jacksonville Jaguars", "Kansas City Chiefs", "Los Angeles Chargers", "Los Angeles Rams", "Miami Dolphins", "Minnesota Vikings", "New England Patriots", "New Orleans Saints", "New York Gians", "New York Jets", "Oakland Raiders", "Philadelphia Eagles", "Pittsburgh Steelers", "San Franciso 49ers", "Seattle Seahawks", "Tampa Bay Buccaneers", "Tennessee Titans", "Washington Redskins"];
+let teamQuery = [];
 //5 positions needed - quarterback QB, wide receiver WR, running back RB, kicker K, tight end TE
 //array of top quarterbacks
 let quarterbacks = [
@@ -1560,5 +1561,6 @@ $.ajax({
 })
   //after we get data from the api
   .then(function(response) {
-	  console.log(response);
+	  teamQuery = response;
+	  console.log(teamQuery);
   });
