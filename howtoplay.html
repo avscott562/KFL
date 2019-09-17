@@ -27,8 +27,8 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">How to Play</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="#">How to Play</a></li>
         <li><a href="#">About Your Teams</a></li>
       </ul>
     </div>
@@ -41,10 +41,10 @@
     <div class="col-sm-3 sidenav">
         
         <h2>Join a Fantasy Football League and compete with your friends!</h2>
+        <br>
         <h3>Choose your league:</h3>
-      <p><a href="#">League 1</a></p>
-      <p><a href="#">League 2</a></p>
-      <p><a href="#">League 3</a></p>
+        <div class="leagueList"></div>
+
     </div>
     <div class="col-sm-5 text-left"> 
       <p>In Fantasy Football, we choose from real-life football players, sort them into a lineup, then face off against another friend’s team. We watch real-life football games to see how our players gained (or lost) points. Then, whoever’s team tallied the most points wins.</p>
@@ -87,5 +87,15 @@
 <footer class="container-fluid text-center">
   <p>Developed by Berenice Kelly, Alicia Scott and Richard Mazel</p>
 </footer>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-database.js"></script>
+<!-- JQuery tag   -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- javascript file tag   -->
+<script src="assets/javascript/kfl.js"></script>
+<script src="assets/javascript/league.js"></script>
+<script src="assets/javascript/signup.js"></script>
 </body>
 </html>
