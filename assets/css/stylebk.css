@@ -1,121 +1,92 @@
 body {
-    width: 100%;
-    font-family: 'Dosis', sans-serif;
-background-color: rgb(245, 245, 245);
+   width: 100%;
+   background-color: rgb(236, 227, 227);
+   font-family: 'Exo 2', sans-serif;
+}
+
+.createbutton {
+   font-size: 16pt;
+   font-weight: bold;
 
 }
 
-h1 {
-    font-family: 'Fjalla One', sans-serif;
-
+.btn {
+   font-size: 20pt;
 }
+
+.sidepics {
+   max-height: 100%;
+   max-width: 100%;
+}
+
 .container {
-    width: 100%;
-    height: 800px;
-    background-color: white;
+   width: 100%;
+   height: 800px;
+   background-color: white;
 }
-well {
-    background-color: white;
-    
-}
+
 header {
-    height: 125px;
-    width: 100%;
-    text-align: center;
+   height: 125px;
+   width: 100%;
+   text-align: center;
 }
+
 p {
-   font-size: 14pt; 
+  font-size: 16pt; 
 }
 ul {
-    font-size: 14pt;
+   font-size: 16pt;
 }
 
 .jumbotron {
-    text-align: center;
-    background-color: rgb(126, 153, 240);
+   margin-top: 20px;
+   background-image: url("https://static.vecteezy.com/system/resources/previews/000/550/698/non_2x/football-player-cartoon-vector.jpg");
+   background-repeat: no-repeat;
+   background-image: center;
+   background-size: 20%;
+   background-position: center;
+   text-align: center;
+   color: rgb(54, 98, 241);
+   position: top;
+   background-color: white;
+   font-family: 'Saira Stencil One', cursive;
+
+}
+.createleague {
+   color: darkorange;
+}
+.headline {
+   width: 70%;
+   height: 40%;
+   text-align: center;
+   display: inline-block;
+   margin-top: 0 auto;
+   
+
+}
+.image {
+   width: 800px;
+   height:250px;
+   margin: 0 auto;
 }
 
-.headline {
 
-    width: 70%;
-    height: 40%;
-    text-align: center;
-    display: inline-block;
-    margin-top: 0 auto;
- }
- .image {
-    width: 800px;
-    height:250px;
-    margin: 0 auto;
- }
- .boxleft {
-    height: 400px;
-    width: 100px;
-    background-color: darkgray;
-    margin-left: 12px;
- }
- .main-text {
-    text-align: center;
-    margin-left: 300px;
- }
- footer {
-    text-align: center;
- }
- 
- body {
-    width: 100%;
-    font-family: 'Dosis', sans-serif;
- }
- h1 {
-    font-family: 'Fjalla One', sans-serif;
- }
- .container {
-    width: 100%;
-    height: 800px;
-    background-color: white;
- }
- header {
-    height: 125px;
-    width: 100%;
-    text-align: center;
- }
- p {
-   font-size: 14pt;
- }
- ul {
-    font-size: 14pt;
- }
- .jumbotron {
-    text-align: center;
-    background-color: rgb(126, 153, 240);
- }
- .headline {
-    width: 70%;
-    height: 40%;
-    text-align: center;
-    display: inline-block;
-    margin-top: 0 auto;
- }
- .image {
-    width: 800px;
-    height:250px;
-    margin: 0 auto;
- }
- .boxleft {
-    height: 400px;
-    width: 100px;
-    background-color: white;
-    border-style: solid;
-    margin-left: 12px;
+
+.boxleft {
+   height: 400px;
+   width: 100px;
+   background-color: darkgray;
+   border-style: solid;
+   margin-left: 12px;
 }
 
 .main-text {
-    text-align: center;
-    margin-left: 300px;
+   text-align: center;
+   margin-left: 300px;
 
 }
 
 footer {
-
-    text-align: center;
+   font-family: 'Neucha', cursive;
+   text-align: center;
 }
