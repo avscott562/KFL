@@ -7,7 +7,7 @@
 // })
 
 // var runningBacks : ["D.J. Foster", "Chase Edmonds", "David Johnson"];
-
+//tester
 // var kickers : ["Zane Gonzales", ];
 //Declare variables
 //array of teams
