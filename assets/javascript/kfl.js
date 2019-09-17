@@ -1543,6 +1543,12 @@ let kickers = [
 
 ];
 
+jQuery.ajaxPrefilter(function(options) {
+    if (options.crossDomain && jQuery.support.cors) {
+        options.url = 'https://cors-anywhere.herokuapp.com/' + options.url;
+    }
+});
+
 //variable to hold api query
 let queryURL = "https://www.fantasyfootballnerd.com/service/nfl-teams/json/test";
 //"https://www.fantasyfootballnerd.com/service/" + searchTerm + "/json/test";
