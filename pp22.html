@@ -8,6 +8,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/stylebk.css">
+  <link rel="stylesheet" href="assets/css/pp.css">
   <link href="https://fonts.googleapis.com/css?family=Dosis|Fjalla+One|Libre+Baskerville|PT+Sans+Narrow&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -28,39 +30,187 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="index22.html">Home</a></li>
+        <li><a href="h22.html">How To Play</a></li>
+        <li><a href="#">About Your Teams</a></li>
       </ul>
     </div>
   </div>
 </nav>
   
-<div class="container-fluid text-center">    
+<div class="container-fluid text-center">
+    <div class="jumbotron">
+        <img src="assets/pictures/football.jpg" alt="placeholder image">
+    </div>
   <div class="row content">
     <div class="col-sm-2 sidenav">
-      <p><a href="#">League 1</a></p>
-      <p><a href="#">League 2</a></p>
-      <p><a href="#">League 3</a></p>
+        <h2>Leagues:</h2>
+        <br>
+        <p><a href="pp22.html" id="1">Football Heroes</a></p>
+        <p><a href="pp22.html" id="2">Football Legends</a></p>
+        <p><a href="pp22.html" id="3">The Real MVPs</a></p>
     </div>
-    <div class="col-sm-8 text-left"> 
-      <h1>How to Play</h1>
-      <p>In FF, we choose from real-life football players, sort them into a lineup, then face off against another friend’s team. We watch real-life football games to see how our players gained (or lost) points. Then, whoever’s team tallied the most points wins.</p>
-      <h2>How points are calculated:</h2>
-      <h3>Defense:</h3>
-        <ul>Each tackle = 1 point</ul>
-        <ul>Sack = 2 points</ul>
-        <ul>Interception = 3 points</ul>
-        <ul>Touchdown by defense = 6 points</ul>
-        <ul>Safety = 2 points</ul>
-          </div>
-    <div class="col-sm-2 sidenav">
-      <div class="well">
-        <p>Create a Fantasy Football League and compete with your friends!</p>
-
-        <button type="button" class="btn btn-primary">Go!</button>
-    </div>
+    <div class="col-sm-10 text-left"> 
+      <h1 id="leagueNameTitle" class="text-center">LEAGUE NAME</h1>
+      <P id="leagueDescription" class="text-center">BRIEF DESCRIPTION OF LEAGUE</P>
+      <br>
+      <button type="button" class="btn btn-primary" id="joinNow">Join Now!</button>
+      <br>
+      <h2>See the teams in this league below:</h2>
+      <br>
+      <div class="table-responsive-sm">
+        <table class="table table-hover">
+            <div class="table-title py-1 px-2">Team #1 Name</div>
+            <thead>
+                <tr>
+                    <th scope="col">Player</th>
+                    <th scope="col">Position</th>
+                    <th scope="col">Touchdowns</th>
+                    <th scope="col">Catches</th>
+                    <th scope="col"># of Rushing Yds</th>
+                    <th scope="col">Fumble</th>
+                    <th scope="col">Interception</th>
+                    <th scope="col">Tackle</th>
+                    <th scope="col">Sacks</th>
+                    <th scope="col">Defensive Touchdowns</th>
+                    <th scope="col">Safety</th>
+                    <th scope="col">Extra Point</th>
+                    <th scope="col">Field Goals (under40 yds)</th>
+                    <th scope="col">Field Goals (40+ yds)</th>
+                    <th scope="col">Total Points</th>
+                </tr>
+            </thead>
+            <tbody id="player1Stats">
+                <tr>
+                    <td>Ben Roethlisberger</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Player 2</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Player 3</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>20</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <table class="table table-hover">
+                <div class="table-title py-1 px-2">Team #2 Name</div>
+                <thead>
+                    <tr>
+                        <th scope="col">Player</th>
+                        <th scope="col">Position</th>
+                        <th scope="col">Touchdowns</th>
+                        <th scope="col">Catches</th>
+                        <th scope="col"># of Rushing Yds</th>
+                        <th scope="col">Fumble</th>
+                        <th scope="col">Interception</th>
+                        <th scope="col">Tackle</th>
+                        <th scope="col">Sacks</th>
+                        <th scope="col">Defensive Touchdowns</th>
+                        <th scope="col">Safety</th>
+                        <th scope="col">Extra Point</th>
+                        <th scope="col">Field Goals (under40 yds)</th>
+                        <th scope="col">Field Goals (40+ yds)</th>
+                        <th scope="col">Total Points</th>
+                    </tr>
+                </thead>
+                <tbody id="player2Stats">
+                    <tr>
+                        <td>Ben Roethlisberger</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>Player 2</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>Player 3</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>20</td>
+                    </tr>
+                </tbody>
+            </table>
+      </div>
     </div>
   </div>
 </div>
