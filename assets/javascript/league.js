@@ -18,22 +18,22 @@ var firebaseConfig = {
     {
       name: "Football Heroes",
       description: "description of Football Heroes league",
-      teams: ["member1", "member2", "member3"]
+      teams: ["Football Geek", "Pig Skin Rules", "Steelers Fan"]
     },
     {
       name: "Football Legends",
       description: "description of Football Legends league",
-      teams: ["member11", "member12", "member13"]
+      teams: ["Dallas Reigns", "Raider Nation", "Pro Bowler"]
     },
     {
       name: "The Real MVPs",
       description: "description of The Real MVPs league",
-      teams: ["mem2ber1", "member22", "membe2r3"]
+      teams: ["Pro Baller", "Ben's Place", "Larry's Squad"]
     },
     {
       name: "The Brady Bunch",
       description: "description of Brady Bunch league",
-      teams: ["memeber1", "member2", "member3"]
+      teams: ["Patriot", "Bean Town", "Alex's Team'"]
     }
   ];
 
@@ -101,10 +101,26 @@ var firebaseConfig = {
       xPt: 0,
       fGoalLess: 0,
       fGoalMore: 0
+    },
+    {
+      player: "New England Patriots",
+      position: "Team",
+      touchdowns: 4,
+      catches: 13,
+      rushYds: 300,
+      fumble: 3,
+      interception: 2,
+      tackle: 6,
+      sacks: 3,
+      dTouchdowns: 0,
+      safety: 0,
+      xPt: 4,
+      fGoalLess: 2,
+      fGoalMore: 1
     }
   ]
   
-  var tableHeaders = ["Player", "Position", "Touchdowns", "Catches", "# of Rushing Yds", "Fumble", "Interception", "Tackle", "Sacks", "Defensive Touchdowns", "Safety", "Extra Point", "Field Goals (under40 yds)", "Field Goals (40+ yds)", "Total Points"]
+  var tableHeaders = ["Player/Team", "Position", "Touchdowns", "Catches", "# of Rushing Yds", "Fumble", "Interception", "Tackle", "Sacks", "Defensive Touchdowns", "Safety", "Extra Point", "Field Goals (under40 yds)", "Field Goals (40+ yds)", "Total Points"]
 
   window.onload = function() {
     $('.leagueList').empty();
