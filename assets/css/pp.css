@@ -1,0 +1,11 @@
+table {
+    background: rgb(207, 231, 247);
+}
+
+#memberList, #joinNow {
+    display: none;
+}
+
+.show {
+    display: block;
+}
