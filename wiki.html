@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/stylebk.css">
   <link rel="stylesheet" href="assets/css/pp.css">
+  <link rel="stylesheet" href="assets/css/wiki.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Dosis|Fjalla+One|Libre+Baskerville|PT+Sans+Narrow&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -32,55 +34,38 @@
       <ul class="nav navbar-nav">
         <li><a href="index.html">Home</a></li>
         <li><a href="h22.html">How To Play</a></li>
-        <li><a href="wiki.html">About Your Teams</a></li>
+        <li class="active"><a href="#">About Your Teams</a></li>
       </ul>
     </div>
   </div>
 </nav>
   
 <div class="container-fluid text-center">
-    <div class="jumbotron">
-        <img src="assets/pictures/football.jpg" alt="placeholder image">
-    </div>
+    <h2>Look up some of your favorite teams and/or players!</h2>
+    <br>
   <div class="row content">
-    <div class="col-sm-2 sidenav">
-        <h2>Leagues:</h2>
-        <div class="leagueList"></div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+        <div class="row content">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <form>
+                    <div class="form-group">
+                        <label for="searchItem">Who do you want to search?</label>
+                        <input type="text" class="form-control" id="searchItem" placeholder="Enter search item here">
+                        <button type="submit" class="btn btn-success" id="submit">Search!</button>
+                        <button type="reset" class="btn btn-success" id="reset">Start Over</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
     </div>
-    <div class="col-sm-10 text-left"> 
-      <h1 id="leagueNameTitle" class="text-center"></h1>
-      <P id="leagueDescription" class="text-center">Click on the league you wan to join.</P>
-      <br>
-       <!-- Button trigger modal -->
-      <button type="button" class="btn btn-primary" id="joinNow" data-toggle="modal" data-target="#playerModal">Join Now!</button>
-      <br>
-      <h2 id="memberList">See the teams in this league below:</h2>
-      <br>
-      <div id="statTable" class="table-responsive-sm"></div>
-    </div>
+    <div class="col-sm-1"></div>
   </div>
-
-
-<!-- Modal for player to select players -->
-<div class="modal fade" id="playerModal" tabindex="-1" role="dialog" aria-labelledby="playerModalTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="playerModalTitle">Pick the players for your team!</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
+  <div class="row content" data-aos="zoom-in-up">
+      <div class="col-sm-12" id="results"></div>
   </div>
-</div>
 </div>
 <br><br><br>
 <footer class="container-fluid text-center">
@@ -90,13 +75,17 @@
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-database.js"></script>
-    <!-- Taffydb Tag -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/taffydb/2.7.3/taffy-min.js"></script>
+    <!-- Anime Tag -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
+     <!-- Scroll Animation Tag -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- JQuery tag   -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- javascript file tag   -->
     <script src="assets/javascript/kfl.js"></script>
     <script src="assets/javascript/league.js"></script>
     <script src="assets/javascript/signup.js"></script>
+    <script src="assets/javascript/wiki.js"></script>
+    
 </body>
 </html>
