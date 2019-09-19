@@ -1,18 +1,3 @@
-// Your web app's Firebase configuration
-var firebaseConfig = {
-    apiKey: "AIzaSyDXLmhDBi4-2M61o5ehdYQHWIILbwePfG8",
-    authDomain: "kflp-87d67.firebaseapp.com",
-    databaseURL: "https://kflp-87d67.firebaseio.com",
-    projectId: "kflp-87d67",
-    storageBucket: "kflp-87d67.appspot.com",
-    messagingSenderId: "231728782178",
-    appId: "1:231728782178:web:a095e0f0c16636a23caa3b"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-
-  // Create a variable to reference the database
-  var database = firebase.database();
 
   var leagues = [
     {
