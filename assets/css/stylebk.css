@@ -7,7 +7,6 @@ body {
 .createbutton {
    font-size: 16pt;
    font-weight: bold;
-
 }
 
 .btn {
@@ -34,6 +33,7 @@ header {
 p {
   font-size: 16pt; 
 }
+
 ul {
    font-size: 16pt;
 }
@@ -50,11 +50,12 @@ ul {
    position: top;
    background-color: white;
    font-family: 'Saira Stencil One', cursive;
-
 }
+
 .createleague {
    color: darkorange;
 }
+
 .headline {
    width: 70%;
    height: 40%;
