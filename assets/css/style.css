@@ -11,10 +11,11 @@ body {
     height: 800px;
     background-color: white;
  }
- header {
-    height: 125px;
+ .header {
+    height: 25px;
     width: 100%;
-    text-align: center;
+    background-color: black;
+    
  }
  .jumbotron {
     text-align: center;
@@ -33,12 +34,8 @@ body {
     height:250px;
     margin: 0 auto;
  }
- .left {
-    height: 400px;
-    width: 300px;
-    
-    margin-left: 12px;
- }
+ 
+
  
  
  footer {
@@ -59,9 +56,9 @@ body {
     background-color: white;
  }
  header {
-    height: 125px;
-    width: 100%;
-    text-align: center;
+    
+    
+    
  }
  p {
    font-size: 14pt;
@@ -94,6 +91,8 @@ body {
  }
  footer {
     text-align: center;
+    background-color: black;
+    color: white;
  }
 
  .jimages {
