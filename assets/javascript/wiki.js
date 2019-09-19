@@ -16,6 +16,7 @@ $('#submit').on("click", function(event) {
         let newDiv = $('<div>').html(results[1][0]);
         let newPara = $('<p>').html(results[2][0]);
         let newLink = $('<a>').attr("src", results[3][0]);
+        $('#results').append(newDiv, newPara, newLink);
         console.log(results);
     });
 });
