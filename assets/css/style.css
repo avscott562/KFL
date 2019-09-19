@@ -106,15 +106,15 @@ ul {
 
 }
 
+.show {
+   display: block !important;
+}
+
 footer {
 
     text-align: center;
-<<<<<<< HEAD
     background-color: black;
     color: white;
-=======
-
->>>>>>> 1affd38c5bab744756ab6b1e405793c197df8f27
  }
 
  .jimages {

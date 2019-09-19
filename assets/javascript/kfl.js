@@ -7,11 +7,18 @@
 // })
 
 // var runningBacks : ["D.J. Foster", "Chase Edmonds", "David Johnson"];
-
+//tester
 // var kickers : ["Zane Gonzales", ];
 //Declare variables
 //array of teams
-let teams = ["Arizona Cardinals", "Atlanta Falcons", "Baltimore Ravens", "Buffalo Bills", "Carolina Panthers", "Chicago Bears", "Cincinnati Bengals", "Cleveland Browns", "Dallas Cowboys", "Denver Broncos", "Detroit Lions", "Green Bay Packers", "Houston Texans", "Indianapolis Colts", "Jacksonville Jaguars", "Kansas City Chiefs", "Los Angeles Chargers", "Los Angeles Rams", "Miami Dolphins", "Minnesota Vikings", "New England Patriots", "New Orleans Saints", "New York Gians", "New York Jets", "Oakland Raiders", "Philadelphia Eagles", "Pittsburgh Steelers", "San Franciso 49ers", "Seattle Seahawks", "Tampa Bay Buccaneers", "Tennessee Titans", "Washington Redskins"];
+// let teams = ["Arizona Cardinals", "Atlanta Falcons", "Baltimore Ravens", "Buffalo Bills", "Carolina Panthers", "Chicago Bears", "Cincinnati Bengals", "Cleveland Browns", "Dallas Cowboys", "Denver Broncos", "Detroit Lions", "Green Bay Packers", "Houston Texans", "Indianapolis Colts", "Jacksonville Jaguars", "Kansas City Chiefs", "Los Angeles Chargers", "Los Angeles Rams", "Miami Dolphins", "Minnesota Vikings", "New England Patriots", "New Orleans Saints", "New York Gians", "New York Jets", "Oakland Raiders", "Philadelphia Eagles", "Pittsburgh Steelers", "San Franciso 49ers", "Seattle Seahawks", "Tampa Bay Buccaneers", "Tennessee Titans", "Washington Redskins"];
+let teams = [];
+let byes = [];
+let qbQuery = [];
+let kQuery = [];
+let wrQuery = [];
+let rbQuery = [];
+let teQuery = [];
 //5 positions needed - quarterback QB, wide receiver WR, running back RB, kicker K, tight end TE
 //array of top quarterbacks
 let quarterbacks = [
@@ -1543,16 +1550,55 @@ let kickers = [
 
 ];
 
+jQuery.ajaxPrefilter(function(options) {
+    if (options.crossDomain && jQuery.support.cors) {
+        options.url = 'https://cors-anywhere.herokuapp.com/' + options.url;
+    }
+});
+
+
+//grab teams from api
 //variable to hold api query
-let queryURL = "https://www.fantasyfootballnerd.com/service/nfl-teams/json/test";
+let queryTeamsURL = "https://www.fantasyfootballnerd.com/service/nfl-teams/json/test";
 //"https://www.fantasyfootballnerd.com/service/" + searchTerm + "/json/test";
 
 //pulling data fron the api
 $.ajax({
-	url: queryURL,
+	url: queryTeamsURL,
 	method: "GET"
 })
   //after we get data from the api
   .then(function(response) {
-	  console.log(response);
-  });
+	  teams = response;
+	  console.log(teams);
+});
+
+//grab bye weeks from api
+//variable to hold api query
+let queryByesURL = "https://www.fantasyfootballnerd.com/service/byes/json/test";
+
+//pulling data fron the api
+$.ajax({
+	url: queryByesURL,
+	method: "GET"
+})
+  //after we get data from the api
+  .then(function(response) {
+	  byes = response;
+	  console.log(byes);
+});
+  
+//grab QBs from api
+//variable to hold api query
+let queryQBURL = "https://www.fantasyfootballnerd.com/service/players/json/test/QB";
+
+//pulling data fron the api
+$.ajax({
+	url: queryQBURL,
+	method: "GET"
+})
+  //after we get data from the api
+  .then(function(response) {
+	  qbQuery = response;
+	  console.log(qbQuery);
+});
