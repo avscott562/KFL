@@ -48,17 +48,13 @@ ul {
     height:250px;
     margin: 0 auto;
  }
- .left {
-    height: 400px;
-    width: 300px;
-    
-    margin-left: 12px;
- }
+ 
+
  
  
  footer {
     text-align: center;
-    background-color: green;
+    background-color: black;
  }
  
  body {
@@ -74,9 +70,9 @@ ul {
     background-color: white;
  }
  header {
-    height: 125px;
-    width: 100%;
-    text-align: center;
+    
+    
+    
  }
  p {
    font-size: 14pt;
@@ -117,7 +113,8 @@ ul {
 footer {
 
     text-align: center;
-
+    background-color: black;
+    color: white;
  }
 
  .jimages {
