@@ -129,6 +129,12 @@
       console.log(leagues[i].name);
     }
   }
+  
+  jQuery.ajaxPrefilter(function(options) {
+    if (options.crossDomain && jQuery.support.cors) {
+        options.url = 'https://cors-anywhere.herokuapp.com/' + options.url;
+    }
+});
 
   $(document).on("click", ".leagueNavLink", function(event) {
     event.preventDefault();
