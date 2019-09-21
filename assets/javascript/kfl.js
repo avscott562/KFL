@@ -40,6 +40,8 @@ $.ajax({
     console.log(response);
 });
 
+console.log(teams);
+
 //grab bye weeks from api
 //variable to hold api query for bye weeks
 let queryByesURL = "https://www.fantasyfootballnerd.com/service/byes/json/test";
@@ -65,7 +67,16 @@ $.ajax({
 })
   //after we get data from the api
   .then(function(response) {
-	  quarterbacks.push(response.Players);
+    quarterbacks.push(response.Players);
+    console.log(response);
+    console.log(quarterbacks[0][0]);
+
+    // for (g=0; g<topQB.length; g++) {
+    //   let top = quarterbacks[0].pop(topQB[g]);
+    //     eligibleQB.push(top);
+    //     g++;
+    // }
+    // console.log(eligibleQB);  
 });
 
 //grab RBs from api
@@ -124,3 +135,16 @@ $.ajax({
   .then(function(response) {
 	kickers.push(response.Players);
 });
+
+
+// for (g=0; g<quarterbacks.length; g++) {
+//   // if (quarterbacks[0][g].displayName === "Andrew Luck") {
+//   //   console.log(quarterbacks[0][g]);
+//   //   g++;
+//   // }
+
+//   console.log(quarterbacks[g]);
+//     g++;
+// }
+
+console.log(quarterbacks[0]);
