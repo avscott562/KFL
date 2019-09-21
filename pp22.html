@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Leagues</title>
+  <title>Choose League</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/stylebk.css">
   <link rel="stylesheet" href="assets/css/pp.css">
+  <link rel="stylesheet" href="assets/css/stylebk.css">
   <link href="https://fonts.googleapis.com/css?family=Exo+2|Neucha|Saira+Stencil+One&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -26,41 +26,59 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand"></a>
+      <a class="navbar-brand" href="assets/pictures/football.jpg"></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li><a href="index.html">Home</a></li>
-        <li><a href="howtoplay.html">How To Play</a></li>
-        <li class="active"><a href="playerspage.html">Leagues</a></li>
-        <li><a href="wiki.html">About the Athletes</a></li>
+        <li><a href="h22.html">How To Play</a></li>
+        <li><a href="wiki.html">About Your Teams</a></li>
       </ul>
     </div>
   </div>
 </nav>
   
 <div class="container-fluid text-center">
-        <img src="https://i.ytimg.com/vi/3t6hM5tRlfA/maxresdefault.jpg"  class="placeholder" alt="placeholder image">
+    <div class="jumbotron">
+        <img src="assets/pictures/football.jpg" alt="placeholder image">
     </div>
-  <div class="row content text-right">
+  <div class="row content">
     <div class="col-sm-2 sidenav">
         <h2>Leagues:</h2>
         <div class="leagueList"></div>
     </div>
-    <div class="col-sm-6 text-left"> 
-        <h1 id="leagueNameTitle" class="text-center"></h1>
-        <P id="leagueDescription" class="text-center">Click on the league you want to join!</P>
-        <img src="http://www.newdesignfile.com/postpic/2009/09/yellow-arrow-clip-art_298420.png" id="arrow" class="animated bounce infinite" alt="click left">
-
-
-
-        <button type="button" class="btn btn-primary" id="joinNow">Join Now!</button>
-        <br>
-        <h2 id="memberList">See the teams in this league below:</h2>
-        <br>
-        <div id="statTable" class="table-responsive-sm-4"></div>
+    <div class="col-sm-10 text-left"> 
+      <h1 id="leagueNameTitle" class="text-center"></h1>
+      <P id="leagueDescription" class="text-center">Click on the league you want to join.</P>
+      <br>
+       <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" id="joinNow" data-toggle="modal" data-target="#playerModal">Join Now!</button>
+      <br>
+      <h2 id="memberList">See the teams in this league below:</h2>
+      <br>
+      <div id="statTable" class="table-responsive-sm"></div>
     </div>
   </div>
+
+
+<!-- Modal for player to select players -->
+<div class="modal fade" id="playerModal" tabindex="-1" role="dialog" aria-labelledby="playerModalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="playerModalTitle">Pick the players for your team!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
   </div>
 </div>
 </div>
@@ -72,6 +90,8 @@
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-database.js"></script>
+    <!-- Taffydb Tag -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/taffydb/2.7.3/taffy-min.js"></script>
     <!-- JQuery tag   -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- javascript file tag   -->

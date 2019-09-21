@@ -1,7 +1,7 @@
 body {
    width: 100%;
-   background-color: rgb(236, 227, 227);
    font-family: 'Exo 2', sans-serif;
+   background-color: white;
 }
 
 .createbutton {
@@ -52,6 +52,12 @@ ul {
    font-family: 'Saira Stencil One', cursive;
 }
 
+#arrow {
+   max-height: 10%;
+   max-width: 10%;
+   align-content: center;
+}
+
 .createleague {
    color: darkorange;
 }
@@ -71,12 +77,15 @@ ul {
    margin: 0 auto;
 }
 
-
+.placeholder {
+   max-height: 40%;
+   max-width: 40%;
+   align-content: center;
+}
 
 .boxleft {
    height: 400px;
    width: 100px;
-   background-color: darkgray;
    border-style: solid;
    margin-left: 12px;
 }

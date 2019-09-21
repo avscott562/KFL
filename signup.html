@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>KFL</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Dosis|Fjalla+One|Libre+Baskerville|PT+Sans+Narrow&display=swap" rel="stylesheet">
+
+
+  
+
+
+</head>
+<body>
+    
+    <form action="">
+        <input type="email" name="" id="email" placeholder="email">
+        <input type="password" name="" id="password" placeholder="password">
+        <button id="signup"> Sign Up </button>
+
+    </form>
+
+
+    <script>
+
+
+      
+
+
+        window.onload = function(){
+
+            var firebaseConfig = {
+                apiKey: "AIzaSyDXLmhDBi4-2M61o5ehdYQHWIILbwePfG8",
+                authDomain: "kflp-87d67.firebaseapp.com",
+                databaseURL: "https://kflp-87d67.firebaseio.com",
+                projectId: "kflp-87d67",
+                storageBucket: "kflp-87d67.appspot.com",
+                messagingSenderId: "231728782178",
+                appId: "1:231728782178:web:a095e0f0c16636a23caa3b"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+
+            var database = firebase.database();
+
+            $('#signup').click( function(event){
+
+                event.preventDefault()
+
+                // make sure user does not aleady exist 
+                // if user does exist, do not create a new user object 
+
+                let email = $('#email').val().trim()
+                let pass = $('#password').val().trim()
+                let id = uuid()
+
+                // this is how you create a user 
+                firebase.database().ref('users/' + id).push({
+                    email: email,
+                    password: pass,
+                });
+                
+
+                // this is how you woukd "log in" a user 
+                firebase.database().ref('/users').once('value').then(function(snapshot) {
+                    let users = snapshot.val() 
+
+                    for (index in users){
+                        for (i in users[index]){
+                            let email = users[index][i].email
+                            let pass = users[index][i].password
+
+                            /* 
+                            if(email == USER_INPUTTED_EMAIL) AND (password == USER_INPUTTED PASSWORD){
+                                // save a copy of the user object locally to localStorage 
+                                // and use that as authentication for the entire site
+
+
+                                // if user object does not exist, then you are "logged out"
+
+                                // to log out, just delete user object from localStorage 
+                            }
+                            */ 
+                            console.log( "user object is: " , email, pass)
+                        }
+                    }
+                });
+
+
+            })
+
+
+         
+
+
+        }
+
+    </script>
+
+
+
+
+<br><br><br>
+<footer class="container-fluid text-center">
+  <p>Developed by Berenice Kelly, Alicia Scott and Richard Mazel</p>
+</footer>
+
+
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-database.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/node-uuid/1.4.8/uuid.js"></script>
+  
+    <!-- JQuery tag   -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- javascript file tag   -->
+  <script src="assets/javascript/kfl.js"></script>
+</body>
+</html>
