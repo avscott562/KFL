@@ -40,8 +40,7 @@
 </nav>
   
 <div class="container-fluid text-center">
-        <img src="https://i.ytimg.com/vi/3t6hM5tRlfA/maxresdefault.jpg"  class="placeholder" alt="placeholder image">
-    </div>
+  <img src="https://i.ytimg.com/vi/3t6hM5tRlfA/maxresdefault.jpg"  class="placeholder" alt="placeholder image">
   <div class="row content text-right">
     <div class="col-sm-2 sidenav">
         <h2>Leagues:</h2>
@@ -52,15 +51,74 @@
         <P id="leagueDescription" class="text-center">Click on the league you want to join!</P>
         <img src="http://www.newdesignfile.com/postpic/2009/09/yellow-arrow-clip-art_298420.png" id="arrow" class="animated bounce infinite" alt="click left">
 
-
-
-        <button type="button" class="btn btn-primary" id="joinNow">Join Now!</button>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" id="joinNow" data-toggle="modal" data-target="#playerModal">Join Now!</button>
         <br>
         <h2 id="memberList">See the teams in this league below:</h2>
         <br>
         <div id="statTable" class="table-responsive-sm-4"></div>
     </div>
   </div>
+
+  <!-- Modal for player to select players -->
+<div class="modal fade" id="playerModal" tabindex="-1" role="dialog" aria-labelledby="playerModalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="playerModalTitle">Pick the players for your team!</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h4 id="leagueNameModal">League Name</h4>
+        <form>
+          <div class="form-group">
+            <label for="quarterbackModal">Quarterback</label>
+            <select class="form-control" id="quarterbackModal">
+              <option class="selected">Select your QB</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="wideReceiverModal">Wide Receiver</label>
+            <select class="form-control" id="wideReceiverModal">
+              <option class="selected">Select your WR</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="runningBackModal">Running Back</label>
+            <select class="form-control" id="runningBackModal">
+              <option class="selected">Select your RB</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="tightEndModal">Tight End</label>
+            <select class="form-control" id="tightEndModal">
+              <option class="selected">Select your TE</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="kickerModal">Kicker</label>
+            <select class="form-control" id="kickerModal">
+              <option class="selected">Select your K</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="defenseTeamModal">Defensive Team</label>
+            <select class="form-control" id="defenseTeamModal">
+              <option class="selected">Select your Defensive Team</option>
+            </select>
+          </div>
+          </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" id="closeModal" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="addTeam">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
   </div>
 </div>
 </div>
