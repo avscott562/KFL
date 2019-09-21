@@ -2,7 +2,7 @@
   var leagues = [
     {
       name: "Football Heroes",
-      description: "description of Football Heroes league",
+      description: "Recommended for ages 6-8",
       teams: [
         {teamName: "Football Geek",}, 
         {teamName: "Pig Skin Rules",},
@@ -16,7 +16,7 @@
     },
     {
       name: "Football Legends",
-      description: "description of Football Legends league",
+      description: "Recommended for ages 8-10",
       teams: [{teamName: "Dallas Reigns",}, {teamName:"Raider Nation",}, {teamName: "Pro Bowler",}],
       usedQB: [],
       usedWR: [],
@@ -26,8 +26,8 @@
     },
     {
       name: "The Real MVPs",
-      description: "description of The Real MVPs league",
-      teams: [{teamName: "Pro Baller",}, {teamName: "Ben's Place",}, {teamName: "Larry's Squad",}],
+      description: "Recommended for ages 10-12",
+      teams: [{teamName: "Pro Baller",}, {teamName: "Ben's Bad Boys",}, {teamName: "Larry's Legends",}],
       usedQB: [],
       usedWR: [],
       usedTE: [],
@@ -36,8 +36,8 @@
     },
     {
       name: "The Brady Bunch",
-      description: "description of Brady Bunch league",
-      teams: [{teamName: "Patriot",}, {teamName: "Bean Town",}, {teamName: "Alex's Team",}],
+      description: "Recommended for ages 12-14",
+      teams: [{teamName: "Rich's Radicals",}, {teamName: "Bean Town Ballers",}, {teamName: "Alex's Animals",}],
       usedQB: [],
       usedWR: [],
       usedTE: [],
