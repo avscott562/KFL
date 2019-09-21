@@ -127,8 +127,9 @@ function leagueTeamsPlayers (league) {
     let kr = eligibleK.pop(Math.floor(Math.random() * eligibleK.length));
     league.teams[t].k = kr;
   }
-  console.log(league.teams[1]);
-  console.log(eligibleQB);
+  console.log(league.teams);
+  console.log(league.teams.length);
+  console.log(league.teams[0].k.player);
 }
 
 leagueTeamsPlayers (leagues[0]);
@@ -188,28 +189,38 @@ leagueTeamsPlayers (leagues[0]);
           }
 
           let newBody = $('<tbody>').attr("id", leagues[i].teams[t].teamName+"stats");
-          for (d=0; d<eligibleQB.length; d++) {
+       
 
-            let newBodyRow = $('<tr>');
-            let newPlay = $('<td>').text(eligibleQB[d].player);
-            let newPos = $('<td>').text(eligibleQB[d].position);
-            let newTD = $('<td>').text(eligibleQB[d].touchdowns);
-            let newCatch = $('<td>').text(eligibleQB[d].catches);
-            let newRush = $('<td>').text(eligibleQB[d].rushYds);
-            let newFumble = $('<td>').text(eligibleQB[d].fumble);
-            let newInter = $('<td>').text(eligibleQB[d].interception);
-            let newTackle = $('<td>').text(eligibleQB[d].tackle);
-            let newSack = $('<td>').text(eligibleQB[d].sacks);
-            let newDTD = $('<td>').text(eligibleQB[d].dTouchdowns);
-            let newSafety = $('<td>').text(eligibleQB[d].safety);
-            let newXPT = $('<td>').text(eligibleQB[d].xPt);
-            let newFGLess = $('<td>').text(eligibleQB[d].fGoalLess);
-            let newFGMore = $('<td>').text(eligibleQB[d].fGoalMore);
-            let newTotal = $('<td>').text(129);
+          console.log('we are here')
+            for ( key in leagues[i].teams[t]){
+              if ( key.toString() == "teamName"){
+                continue
+                // this skips this iteration of the loop
+              }
 
+              let newBodyRow = $('<tr>');
+              let newPlay = $('<td>').text(leagues[i].teams[t][key].player);
+              let newPos = $('<td>').text(leagues[i].teams[t][key].position);
+              let newTD = $('<td>').text(leagues[i].teams[t][key].touchdowns);
+              let newCatch = $('<td>').text(leagues[i].teams[t][key].catches);
+              let newRush = $('<td>').text(leagues[i].teams[t][key].rushYds);
+              let newFumble = $('<td>').text(leagues[i].teams[t][key].fumble);
+              let newInter = $('<td>').text(leagues[i].teams[t][key].interception);
+              let newTackle = $('<td>').text(leagues[i].teams[t][key].tackle);
+              let newSack = $('<td>').text(leagues[i].teams[t][key].sacks);
+              let newDTD = $('<td>').text(leagues[i].teams[t][key].dTouchdowns);
+              let newSafety = $('<td>').text(leagues[i].teams[t][key].safety);
+              let newXPT = $('<td>').text(leagues[i].teams[t][key].xPt);
+              let newFGLess = $('<td>').text(leagues[i].teams[t][key].fGoalLess);
+              let newFGMore = $('<td>').text(leagues[i].teams[t][key].fGoalMore);
+              let newTotal = $('<td>').text(Math.floor(Math.random() * 50));
+              
             newBodyRow.append(newPlay, newPos, newTD, newCatch, newRush, newFumble, newInter, newTackle, newSack, newDTD, newSafety, newXPT, newFGLess, newFGMore, newTotal);
             newBody.append(newBodyRow);
+          
           }
+
+          
           newHeader.append(newHeadRow);
           newTable.append(newHeader, newBody);
           $('#statTable').append(newDiv, newTable, $('<br>'));
