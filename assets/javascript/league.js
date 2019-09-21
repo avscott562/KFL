@@ -22,6 +22,9 @@
     }
   ];
 
+  let eligibleRB = ["Todd Gurley", "Saquon Barkley", "Ezekiel Elliott", "Alvin Kamara", "Melvin Gordon", "Christian McCaffrey", "Le'Veon Bell", "David Johnson", "Joe Mixon", "Kareem Hunt"];
+
+  let eligibleQB = ["Tom Brady", ""];
   var testData = [
     {
       player: "Ben Roethlisberger",
