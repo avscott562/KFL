@@ -59,7 +59,52 @@ $(document).on("click", ".search", function() {
         $('#results').prepend($('<br>'), searchImage);
     });
 
+    
+    let ytURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&q=" + giphyClickSearch + "best+plays&type=video&videoEmbeddable=true&key=AIzaSyDPG4X2HgjyrkRuXgU4EermQI49CztbWsI"
 
+    $.ajax({
+        url: ytURL,
+        method: "GET"
+    })
+    .then(function(ytResponse) {
+        let videos = ytResponse;
+        console.log(videos.items[0].id.videoId);
+
+    //     var tag = document.createElement('script');
+
+    //   tag.src = "https://www.youtube.com/iframe_api";
+    //   var firstScriptTag = document.getElementsByTagName('script')[0];
+    //   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '390',
+          width: '640',
+          videoId: videos.items[0].id.videoId,
+          playerVars: {'rel' :0}
+        //   events: {
+        //     'onReady': onPlayerReady,
+        //     'onStateChange': onPlayerStateChange
+        //   }
+        });
+      }
+      onYouTubeIframeAPIReady();
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 6000);
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+    });
 });
 
 $('#submit').on("click", function(event) {
