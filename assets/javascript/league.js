@@ -213,7 +213,7 @@ leagueTeamsPlayers (leagues[0]);
               let newXPT = $('<td>').text(leagues[i].teams[t][key].xPt);
               let newFGLess = $('<td>').text(leagues[i].teams[t][key].fGoalLess);
               let newFGMore = $('<td>').text(leagues[i].teams[t][key].fGoalMore);
-              let newTotal = $('<td>').text(129);
+              let newTotal = $('<td>').text(Math.floor(Math.random() * 50));
               
             newBodyRow.append(newPlay, newPos, newTD, newCatch, newRush, newFumble, newInter, newTackle, newSack, newDTD, newSafety, newXPT, newFGLess, newFGMore, newTotal);
             newBody.append(newBodyRow);
