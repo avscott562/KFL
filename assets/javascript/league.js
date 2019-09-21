@@ -1,4 +1,4 @@
-
+  
   var leagues = [
     {
       name: "Football Heroes",
@@ -126,7 +126,6 @@
       });
       newP.append(newA);
       $('.leagueList').append(newP);
-      console.log(leagues[i].name);
     }
   }
   
@@ -140,6 +139,7 @@
     event.preventDefault();
     let lName = $(this).attr("data-name");
     let desc = $(this).attr("data-description");
+    $('#leagueNameModal').attr("data-name", lName).text(lName);
     $('#leagueNameTitle').text(lName);
     $('#leagueDescription').text(desc);
     $('#memberList').addClass('show');
@@ -190,3 +190,16 @@
       }
     }
   });
+
+  $('#joinNow').on("click", function () {
+   
+  });
+
+  function CreateTeam(league, qb, wr, te, k, rb) {
+    this.league = league;
+    this.qb = qb;
+    this.wr = wr;
+    this.te = te;
+    this.k = k;
+    this.rb = rb;
+  }
