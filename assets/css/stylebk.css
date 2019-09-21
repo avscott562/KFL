@@ -53,9 +53,8 @@ ul {
 }
 
 #arrow {
-   max-height: 10%;
-   max-width: 10%;
-   align-content: center;
+   max-height: 20%;
+   max-width: 20%;
 }
 
 .createleague {
@@ -99,4 +98,6 @@ ul {
 footer {
    font-family: 'Neucha', cursive;
    text-align: center;
+   background-color: black;
+   color: white;
 }
