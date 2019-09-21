@@ -3,26 +3,50 @@
     {
       name: "Football Heroes",
       description: "description of Football Heroes league",
-      teams: ["Football Geek", "Pig Skin Rules", "Steelers Fan"]
+      teams: [
+        {teamName: "Football Geek",}, 
+        {teamName: "Pig Skin Rules",},
+        {teamName: "Steelers Fan",}
+      ],
+      usedQB: [],
+      usedWR: [],
+      usedTE: [],
+      usedRB: [],
+      usedK: []
     },
     {
       name: "Football Legends",
       description: "description of Football Legends league",
-      teams: ["Dallas Reigns", "Raider Nation", "Pro Bowler"]
+      teams: [{teamName: "Dallas Reigns",}, {teamName:"Raider Nation",}, {teamName: "Pro Bowler",}],
+      usedQB: [],
+      usedWR: [],
+      usedTE: [],
+      usedRB: [],
+      usedK: []
     },
     {
       name: "The Real MVPs",
       description: "description of The Real MVPs league",
-      teams: ["Pro Baller", "Ben's Place", "Larry's Squad"]
+      teams: [{teamName: "Pro Baller",}, {teamName: "Ben's Place",}, {teamName: "Larry's Squad",}],
+      usedQB: [],
+      usedWR: [],
+      usedTE: [],
+      usedRB: [],
+      usedK: []
     },
     {
       name: "The Brady Bunch",
       description: "description of Brady Bunch league",
-      teams: ["Patriot", "Bean Town", "Alex's Team'"]
+      teams: [{teamName: "Patriot",}, {teamName: "Bean Town",}, {teamName: "Alex's Team",}],
+      usedQB: [],
+      usedWR: [],
+      usedTE: [],
+      usedRB: [],
+      usedK: []
     }
   ];
 
-  let topRB = ["Todd Gurley", "Saquon Barkley", "Ezekiel Elliott", "Alvin Kamara", "Melvin Gordon", "Christian McCaffrey", "Le'Veon Bell", "David Johnson", "Joe Mixon", "Kareem Hunt"];
+let topRB = ["Todd Gurley", "Saquon Barkley", "Ezekiel Elliott", "Alvin Kamara", "Melvin Gordon", "Christian McCaffrey", "Le'Veon Bell", "David Johnson", "Joe Mixon", "Kareem Hunt"];
 
 let topQB = ["Tom Brady", "Drew Brees", "Patrick Mahomes", "Aaron Rodgers", "Ben Roethlisberger", "Russell Wilson", "Philip Rivers", "Matt Ryan", "Andrew Luck", "Cam Newton"];
 
@@ -85,88 +109,29 @@ tEnd();
 kPlay();
 dTeam();
 
-  var testData = [
-    {
-      player: "Ben Roethlisberger",
-      position: "QB",
-      touchdowns: 2,
-      catches: 0,
-      rushYds: 5,
-      fumble: 1,
-      interception: 0,
-      tackle: 0,
-      sacks: 0,
-      dTouchdowns: 0,
-      safety: 0,
-      xPt: 0,
-      fGoalLess: 0,
-      fGoalMore: 0
-    },
-    {
-      player: "Tom Brady",
-      position: "QB",
-      touchdowns: 2,
-      catches: 0,
-      rushYds: 5,
-      fumble: 1,
-      interception: 0,
-      tackle: 0,
-      sacks: 0,
-      dTouchdowns: 0,
-      safety: 0,
-      xPt: 0,
-      fGoalLess: 0,
-      fGoalMore: 0
-    },
-    {
-      player: "Test2",
-      position: "QB",
-      touchdowns: 2,
-      catches: 0,
-      rushYds: 5,
-      fumble: 1,
-      interception: 0,
-      tackle: 0,
-      sacks: 0,
-      dTouchdowns: 0,
-      safety: 0,
-      xPt: 0,
-      fGoalLess: 0,
-      fGoalMore: 0
-    },
-    {
-      player: "Test 3",
-      position: "QB",
-      touchdowns: 2,
-      catches: 0,
-      rushYds: 5,
-      fumble: 1,
-      interception: 0,
-      tackle: 0,
-      sacks: 0,
-      dTouchdowns: 0,
-      safety: 0,
-      xPt: 0,
-      fGoalLess: 0,
-      fGoalMore: 0
-    },
-    {
-      player: "New England Patriots",
-      position: "Team",
-      touchdowns: 4,
-      catches: 13,
-      rushYds: 300,
-      fumble: 3,
-      interception: 2,
-      tackle: 6,
-      sacks: 3,
-      dTouchdowns: 0,
-      safety: 0,
-      xPt: 4,
-      fGoalLess: 2,
-      fGoalMore: 1
-    }
-  ]
+function leagueTeamsPlayers (league) {
+  for (t=0; t<league.teams.length; t++) {
+    let qb = eligibleQB.pop(Math.floor(Math.random() * eligibleQB.length));
+    league.teams[t].q = qb;
+    // league.usedQB.push(qb);
+
+    let rb = eligibleRB.pop(Math.floor(Math.random() * eligibleRB.length));
+    league.teams[t].r = rb;
+
+    let wr = eligibleWR.pop(Math.floor(Math.random() * eligibleWR.length));
+    league.teams[t].w = wr;
+
+    let te = eligibleTE.pop(Math.floor(Math.random() * eligibleTE.length));
+    league.teams[t].t = te;
+
+    let kr = eligibleK.pop(Math.floor(Math.random() * eligibleK.length));
+    league.teams[t].k = kr;
+  }
+  console.log(league.teams[1]);
+  console.log(eligibleQB);
+}
+
+leagueTeamsPlayers (leagues[0]);
   
   var tableHeaders = ["Player/Team", "Position", "Touchdowns", "Catches", "# of Rushing Yds", "Fumble", "Interception", "Tackle", "Sacks", "Defensive Touchdowns", "Safety", "Extra Point", "Field Goals (under40 yds)", "Field Goals (40+ yds)", "Total Points"]
 
@@ -212,8 +177,8 @@ dTeam();
     for (i=0; i<leagues.length; i++) {
       if (leagues[i].name === lName) {
         for (t=0; t<leagues[i].teams.length; t++) {
-          let newTable = $('<table>').addClass('table table-hover').attr("id", "team"+leagues[i].teams[t]);
-          let newDiv = $('<div>').text(leagues[i].teams[t]);
+          let newTable = $('<table>').addClass('table table-hover').attr("id", "team"+leagues[i].teams[t].teamName);
+          let newDiv = $('<div>').text(leagues[i].teams[t].teamName);
 
           let newHeader = $('<thead>');
           let newHeadRow = $('<tr>');
@@ -222,7 +187,7 @@ dTeam();
             newHeadRow.append(newTitle);
           }
 
-          let newBody = $('<tbody>').attr("id", leagues[i].teams[t]+"stats");
+          let newBody = $('<tbody>').attr("id", leagues[i].teams[t].teamName+"stats");
           for (d=0; d<eligibleQB.length; d++) {
 
             let newBodyRow = $('<tr>');
@@ -248,7 +213,7 @@ dTeam();
           newHeader.append(newHeadRow);
           newTable.append(newHeader, newBody);
           $('#statTable').append(newDiv, newTable, $('<br>'));
-          console.log(leagues[i].teams);
+          console.log(leagues[i].teams[t].teamName);
         }
       }
     }
