@@ -1570,6 +1570,7 @@ $.ajax({
   //after we get data from the api
   .then(function(response) {
 	  teams = response;
+	  console.log(teams);
 });
 
 //grab bye weeks from api
