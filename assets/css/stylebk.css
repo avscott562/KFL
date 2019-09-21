@@ -53,13 +53,27 @@ ul {
 }
 
 #arrow {
-   max-height: 10%;
-   max-width: 10%;
-   align-content: center;
+   max-height: 15%;
+   max-width: 15%;
 }
+
+
 
 .createleague {
    color: darkorange;
+}
+
+#submit {
+   font-size: 15pt;
+}
+
+#reset {
+   font-size: 15pt;
+}
+
+.down-arrow {
+   max-height: 15%;
+   max-width: 15%;
 }
 
 .headline {
@@ -97,6 +111,32 @@ ul {
 }
 
 footer {
-   font-family: 'Neucha', cursive;
    text-align: center;
+   background-color: black;
+   color: white;
+}
+
+
+table {
+   background: rgb(207, 231, 247);
+}
+
+#memberList, #joinNow {
+   display: none;
+}
+
+.show {
+   display: block;
+}
+
+#athleteButtons {
+   margin-bottom: 30px;
+}
+
+#player {
+   display:inline-block !important;
+}
+
+.form-group {
+   font-size: 18pt;
 }

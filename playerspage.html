@@ -7,9 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/stylebk.css">
-  <link rel="stylesheet" href="assets/css/pp.css">
   <link href="https://fonts.googleapis.com/css?family=Exo+2|Neucha|Saira+Stencil+One&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -48,10 +46,14 @@
     </div>
     <div class="col-sm-6 text-left"> 
         <h1 id="leagueNameTitle" class="text-center"></h1>
-        <P id="leagueDescription" class="text-center">Click on the league you want to join!</P>
-        <img src="http://www.newdesignfile.com/postpic/2009/09/yellow-arrow-clip-art_298420.png" id="arrow" class="animated bounce infinite" alt="click left">
+        <P id="leagueDescription" class="text-center">Click on a league on the left to check out the leagues. Click "Join" on the league you want to join!</P>
+        
 
-        <!-- Button trigger modal -->
+        <marquee behavior="alternate">
+          <img src="http://www.newdesignfile.com/postpic/2009/09/yellow-arrow-clip-art_298420.png" id="arrow" alt="click left">
+          </marquee>
+          
+                  <!-- Button trigger modal -->
         <button type="button" class="btn btn-primary" id="joinNow" data-toggle="modal" data-target="#playerModal">Join Now!</button>
         <br>
         <h2 id="memberList">See the teams in this league below:</h2>
