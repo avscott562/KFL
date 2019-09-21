@@ -1,13 +1,12 @@
 body {
    width: 100%;
-   background-color: rgb(236, 227, 227);
    font-family: 'Exo 2', sans-serif;
+   background-color: white;
 }
 
 .createbutton {
    font-size: 16pt;
    font-weight: bold;
-
 }
 
 .btn {
@@ -34,6 +33,7 @@ header {
 p {
   font-size: 16pt; 
 }
+
 ul {
    font-size: 16pt;
 }
@@ -50,11 +50,18 @@ ul {
    position: top;
    background-color: white;
    font-family: 'Saira Stencil One', cursive;
-
 }
+
+#arrow {
+   max-height: 10%;
+   max-width: 10%;
+   align-content: center;
+}
+
 .createleague {
    color: darkorange;
 }
+
 .headline {
    width: 70%;
    height: 40%;
@@ -70,12 +77,15 @@ ul {
    margin: 0 auto;
 }
 
-
+.placeholder {
+   max-height: 40%;
+   max-width: 40%;
+   align-content: center;
+}
 
 .boxleft {
    height: 400px;
    width: 100px;
-   background-color: darkgray;
    border-style: solid;
    margin-left: 12px;
 }
