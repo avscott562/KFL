@@ -17,16 +17,17 @@
 </head>
 <div class="header">
 </div>
-
+<div class="container-fluid text-center">
 <div class="jumbotron">
-  <img src="./pictures/baker.jpg" class="jimages">
   <img src="./pictures/kids game.jpg" class="jimages">
   <img src="./pictures/frontpage.jpg" class="jimages">
-  <h1 class="display-4">Welcome to Kids Football League</h1>
+  <img src="./pictures/flag football 2.jpg" class="jimages">
+  <h1 class="display-4">Welcome to Kids Fantasy Football League</h1>
   <h2 class="display-4">The Ultimate Fantasy Football Site For Kids</h2>
   <button type="button" class="btn btn-primary logButton" data-toggle="modal" data-target="#sign-up-modal" >Sign Up</button>
   <button type="button" class="btn btn-primary logButton" data-toggle="modal" data-target="#sign-in-modal" >Sign In</button>
 </div>
+
 
 
 <div class="modal fade" id="sign-in-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -86,12 +87,13 @@
       </div>
     </div>
   </div>
+
 </div>
 
 
 
 <div class="row center">
-  <div class="col-md-3">
+  <div class="col-sm-3">
     <a href=https://www.espn.com/nfl/story/_/id/27621201/source-saints-ink-payton-5-year-extension> <h5>Saints ink
       Payton to a 5 year extension</h5></a>
     <a href=http://www.nfl.com/news/story/0ap3000001054774/article/big-ben-questionable-to-return-rudolph-in-at-qb>
@@ -114,7 +116,8 @@
       <h5>Hopkins: Jalen Ramsey is 'my favorite' CB to face</h5></a>
   </div>
 
-  <div class="col-md-6">
+  
+  <div class="col-sm-6">
     <div class="story">
       <img src="./pictures/ravcards.jpg" alt="Ravs cards" width="628" height="251">
       <a
@@ -123,11 +126,13 @@
       </a>
     </div>
   </div>
-  <div class="col-md-3">
+  <div class="col-sm-3">
     <iframe width="300" height="250" src="https://www.youtube.com/embed/_y0XdcceIfE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>">
     </iframe>
     <h4>Early WAIVER WIRE targets for Week 3 | Full Episode | Fantasy Football Today</h4>
   </div>
+  </div>
+</div>
 
 </div>
 
@@ -139,37 +144,43 @@
 </div>
 
 
+    <!-- Unique ID Generator Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/node-uuid/1.4.8/uuid.js"></script>
 
-  <!-- Unique ID Generator Library -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/node-uuid/1.4.8/uuid.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-database.js"></script>
+  
+    <script>
+      var firebaseConfig = {
+            apiKey: "AIzaSyDXLmhDBi4-2M61o5ehdYQHWIILbwePfG8",
+            authDomain: "kflp-87d67.firebaseapp.com",
+            databaseURL: "https://kflp-87d67.firebaseio.com",
+            projectId: "kflp-87d67",
+            storageBucket: "kflp-87d67.appspot.com",
+            messagingSenderId: "231728782178",
+            appId: "1:231728782178:web:a095e0f0c16636a23caa3b"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        var database = firebase.database();
+    </script>
+  
+  
+    <!-- JQuery tag   -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- javascript file tag   -->
+    <script src="assets/javascript/kfl.js"></script>
+    <script src="assets/javascript/league.js"></script>
+    <script src="assets/javascript/signup.js"></script>
+    <script src="assets/javascript/signin.js"></script>
 
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-database.js"></script>
-
-  <script>
-    var firebaseConfig = {
-          apiKey: "AIzaSyDXLmhDBi4-2M61o5ehdYQHWIILbwePfG8",
-          authDomain: "kflp-87d67.firebaseapp.com",
-          databaseURL: "https://kflp-87d67.firebaseio.com",
-          projectId: "kflp-87d67",
-          storageBucket: "kflp-87d67.appspot.com",
-          messagingSenderId: "231728782178",
-          appId: "1:231728782178:web:a095e0f0c16636a23caa3b"
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-      var database = firebase.database();
-  </script>
 
 
-  <!-- JQuery tag   -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <!-- javascript file tag   -->
-  <script src="assets/javascript/kfl.js"></script>
-  <script src="assets/javascript/league.js"></script>
-  <script src="assets/javascript/signup.js"></script>
-  <script src="assets/javascript/signin.js"></script>
+
+
+
+
 
 
 </body>

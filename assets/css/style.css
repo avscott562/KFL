@@ -17,10 +17,11 @@ well {
     background-color: white;
     
 }
-header {
-    height: 125px;
+.header {
+    height: 25px;
     width: 100%;
     text-align: center;
+    background-color: black;
 }
 p {
    font-size: 14pt; 
@@ -44,9 +45,10 @@ ul {
     margin-top: 0 auto;
  }
  .image {
-    width: 800px;
-    height:250px;
-    margin: 0 auto;
+    width: 628px;
+    height:251px;
+    margin-left: 5px;
+   
  }
  
 
